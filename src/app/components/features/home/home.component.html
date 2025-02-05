@@ -1,29 +1,25 @@
-<p>home works!</p>
-<button (click)="add()">+</button>
-<button (click)="load()">load</button>
+<button (click)="add()" class="btn btn-secondary mx-2 bg-success">+</button>
+<button (click)="load()" class="btn btn-outline-light">load</button>
 
-<p>{{data | json}}</p>
+@if(data()){
+    <div class="scroll-container" (scrolled)="onScroll()">
+        @for(item of data(); track item){
+            <p><img [src]="item.avatar" class="rounded-full" alt="" loading="lazy" width="1000px" height="1000px"></p>
+            <p>id : {{item.id}}</p>
+            <p>email : {{item.email}}</p>
+            <p> name :{{item.first_name}} {{item.last_name}}</p>
+        }
+    </div>
+}
 
 
-<div class="bg-blue-500 text-white p-4">
-    مرحبًا، هذا نص باستخدام Tailwind CSS!
-  </div>
 
-  <p class="text-xs">هذا نص بحجم صغير جدًا (12px)</p>
-<p class="text-sm">هذا نص بحجم صغير (14px)</p>
-<p class="text-base">هذا نص بحجم عادي (16px)</p>
-<p class="text-lg">هذا نص بحجم كبير قليلاً (18px)</p>
-<p class="text-xl">هذا نص بحجم كبير (20px)</p>
-<p class="text-2xl">هذا نص بحجم أكبر (24px)</p>
-<p class="text-3xl">هذا نص بحجم كبير جدًا (30px)</p>
-<p class="text-4xl">هذا نص بحجم ضخم (36px)</p>
-<p class="text-5xl">هذا نص بحجم أكبر (48px)</p>
-<p class="text-6xl">هذا نص بحجم عملاق (60px)</p>
-<p class="text-7xl">هذا نص بحجم ضخم جدًا (72px)</p>
-<p class="text-8xl">هذا نص بحجم كبير للغاية (96px)</p>
-<p class="text-9xl">هذا نص بحجم هائل (128px)</p>
-
-<div class="resizing">
-    <div>.....</div>
-    <img class="aspect-3/2 object-cover w-full ..." src="sea.jpg" />
+<!-- <div *ngFor="let post of posts" class="post">
+    <h3>{{ post.title }}</h3>
+    <p>{{ post.body }}</p>
 </div>
+
+<div *ngIf="loading" class="loading">
+    <p class="text-lg">Loading...</p>
+</div> -->
+
