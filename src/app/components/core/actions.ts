@@ -9,7 +9,6 @@ export const cartActions = createActionGroup({
 })
 
 export const add = createAction("Add" , props<{obj:any}>());
-
 export const remove = createAction("Remove" , props<{id:number}>());
 
 
