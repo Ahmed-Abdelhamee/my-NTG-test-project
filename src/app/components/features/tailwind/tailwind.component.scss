@@ -1,6 +1,8 @@
-.cl{
-
-    @for $i from 1 to 20 {
-        
-    }
+.resizing {
+  resize: both;
+  cursor: se-resize;
+  width: 400px;
+  height: 400px;
+  background: aliceblue;
+  overflow: auto;
 }
