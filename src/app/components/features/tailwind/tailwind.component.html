@@ -1,52 +1,15 @@
 
-<div class="bg-blue-500 text-white p-4">
-    مرحبًا، هذا نص باستخدام Tailwind CSS!
+<div class="grid sm:max-sm:grid-cols-1 lg:grid-cols-6 md:grid-cols-4 sm:grid-cols-2 gap-2 ...">
+    @for (item of [1,2,3,4,5,6,7,8,9,1,2,3,4,5,6,7,8,9]; track $index) {
+    <div class="border-solid border-red-300 rounded-md border-[.5px]">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJ5A51DHb1thL0s0hX_-Bnk4oraNFEL-cPkA&s" class="w-full rounded-t-md" alt="Product Image">
+      <p class="text-lg text-center font-semibold capitalize text-sky-400 m-0">product title</p>
+      <p class="text-md text-start p-2 text-stone-600 m-0">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni ex cum aut ab excepturi nobis explicabo dolore nisi! Temporibus, nulla.</p>
+      <div class="flex justify-center p-2">
+        <button class="bg-sky-200 text-stone-700 border-none rounded-r-xl p-2 px-8 capitalize font-medium text-[16px]"> buy</button>
+      </div>
+    </div>
+  }
   </div>
 
-  <p class="text-xs">هذا نص بحجم صغير جدًا (12px)</p>
-<p class="text-sm">هذا نص بحجم صغير (14px)</p>
-<p class="text-base">هذا نص بحجم عادي (16px)</p>
-<p class="text-lg">هذا نص بحجم كبير قليلاً (18px)</p>
-<p class="text-xl">هذا نص بحجم كبير (20px)</p>
-<p class="text-2xl">هذا نص بحجم أكبر (24px)</p>
-<p class="text-3xl">هذا نص بحجم كبير جدًا (30px)</p>
-<p class="text-4xl">هذا نص بحجم ضخم (36px)</p>
-<p class="text-5xl">هذا نص بحجم أكبر (48px)</p>
-<p class="text-6xl">هذا نص بحجم عملاق (60px)</p>
-<p class="text-7xl">هذا نص بحجم ضخم جدًا (72px)</p>
-<p class="text-8xl">هذا نص بحجم كبير للغاية (96px)</p>
-<p class="text-9xl">هذا نص بحجم هائل (128px)</p>
-
-<div class="resizing">
-    <div>.....</div>
-    <img class="w-96 m-auto ..." src="sea.jpg" />
-</div>
-
-<div class="columns-1 gap-8 sm:columns-3 mb-10 ...">
-    <img class="rounded-full w-[250px] h-[250px] ..." src="sea.jpg" />
-    <img class="w-96" src="sea.jpg" />
-    <img class="w-96" src="sea.jpg" />
-    <!-- ... -->
-</div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-    <img class="rounded-full w-[250px] h-[250px] ..." src="sea.jpg" />
-    <img class="w-96" src="sea.jpg" />
-    <img class="w-96" src="sea.jpg" />
-    <!-- ... -->
-</div>
-
-<div class="columns-3 mt-2">
-  <p class="p-2 rounded-lg bg-green-200">Well, let me tell you something, ...</p>
-  <p class="p-2 rounded-lg break-after-column bg-green-200">Sure, go ahead, laugh...</p>
-
-  <p class="p-2 rounded-lg bg-red-200">Maybe we can live without...</p>
-
-  <p class="p-2 rounded-lg break-before-column bg-yellow-200">Look. If you think this is...</p>
-  <p class="p-2 rounded-lg bg-yellow-200">Look. If you think this is...</p>
-</div>
-
-<div class="flex items-center content-center">
-  <img class="size-24 rounded-full" src="sea.jpg" />
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-</div>
 

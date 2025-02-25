@@ -1,11 +1,14 @@
 import { HttpClient } from '@angular/common/http';
-import { Injectable } from '@angular/core';
+import { Injectable, signal } from '@angular/core';
 import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class DataService {
+
+  sharedOrdinarySignal:any=signal(10);
+  ordinaryVariable:number=5;
 
   private API_URL = 'https://jsonplaceholder.typicode.com/posts'; // Sample API
 

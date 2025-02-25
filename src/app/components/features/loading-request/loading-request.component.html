@@ -1,0 +1,11 @@
+<p>loading-request works!</p>
+@if(signalStoreNgrx()){
+    <div class="scroll-container" (scrolled)="onScroll()">
+        @for(item of signalStoreNgrx(); track item){
+            <p><img [src]="item.avatar" class="rounded-full" alt="" loading="lazy" width="1000px" height="1000px"></p>
+            <p>id : {{item.id}}</p>
+            <p>email : {{item.email}}</p>
+            <p> name :{{item.first_name}} {{item.last_name}}</p>
+        }
+    </div>
+}
