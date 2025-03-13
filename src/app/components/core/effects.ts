@@ -18,7 +18,7 @@ export class CartEffects {
       mergeMap(() =>
         {
           return this.http.get<any>('https://reqres.in/api/users').pipe(
-            map((users: any) => loadApiSuccess({ users }))
+            map((users: any) => loadApiSuccess({ users })) // here we can direcet dispatch for the action
           );
         }
       )

@@ -8,6 +8,7 @@ import {
   PLATFORM_ID,
 } from '@angular/core';
 import anime from 'animejs';
+import { DataService } from '../../core/services/data.service';
 
 @Component({
   selector: 'app-animejs',
@@ -20,7 +21,7 @@ import anime from 'animejs';
 export class AnimejsComponent implements AfterViewInit {
   constructor(
     @Inject(PLATFORM_ID) private platFormId: object,
-    private ngZone: NgZone
+    private ngZone: NgZone,
   ) {}
 
   ngAfterViewInit(): void {

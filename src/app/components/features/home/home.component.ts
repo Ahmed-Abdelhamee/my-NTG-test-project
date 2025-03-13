@@ -2,7 +2,7 @@ import { Component, ComponentRef, HostListener, Signal, signal, ViewChild, viewC
 import { Store } from '@ngrx/store';
 import { add, cartActions, loadApi } from '../../core/actions';
 import { cartSelector } from '../../core/selectors';
-import { CommonModule } from '@angular/common';
+import { CommonModule, NgOptimizedImage } from '@angular/common';
 import { DataService } from '../../core/services/data.service';
 import { HomeChildComponent } from './home-child/home-child.component';
 import { firstValueFrom, lastValueFrom } from 'rxjs';
@@ -13,7 +13,7 @@ export interface posts {}
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule, HomeChildComponent],
+  imports: [CommonModule, HomeChildComponent, NgOptimizedImage],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
 })

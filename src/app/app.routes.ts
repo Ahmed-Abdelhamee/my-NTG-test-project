@@ -4,6 +4,7 @@ import { TailwindComponent } from './components/features/tailwind/tailwind.compo
 import { ParentOnpushComponent } from './components/features/parent-onpush/parent-onpush.component';
 import { AnimejsComponent } from './components/features/animejs/animejs.component';
 import { LoadingRequestComponent } from './components/features/loading-request/loading-request.component';
+import { KendoUiComponent } from './components/features/kendo-ui/kendo-ui.component';
 
 export const routes: Routes = [
     {path:'', component:HomeComponent},
@@ -11,4 +12,5 @@ export const routes: Routes = [
     {path:'tailwind', component:TailwindComponent},
     {path:'onpush', component:ParentOnpushComponent},
     {path:'loading-scroll', component:LoadingRequestComponent},
+    {path:'kendo-ui', component:KendoUiComponent},
 ];

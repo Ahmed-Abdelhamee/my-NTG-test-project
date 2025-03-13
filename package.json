@@ -11,7 +11,7 @@
   },
   "private": true,
   "dependencies": {
-    "@angular/animations": "^18.2.0",
+    "@angular/animations": "^18.2.13",
     "@angular/common": "^18.2.0",
     "@angular/compiler": "^18.2.0",
     "@angular/core": "^18.2.0",
@@ -26,6 +26,8 @@
     "@ngrx/router-store": "^18.1.1",
     "@ngrx/store": "^18.1.1",
     "@ngrx/store-devtools": "^18.1.1",
+    "@progress/kendo-angular-grid": "^18.1.1",
+    "@progress/kendo-theme-default": "^10.3.1",
     "animejs": "^3.2.2",
     "bootstrap": "^5.3.3",
     "express": "^4.18.2",

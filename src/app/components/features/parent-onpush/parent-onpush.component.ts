@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ChildOnpushComponent } from '../child-onpush/child-onpush.component';
+import { ChildOnpushComponent } from './child-onpush/child-onpush.component';
 
 @Component({
   selector: 'app-parent-onpush',
